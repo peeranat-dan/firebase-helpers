@@ -1,11 +1,11 @@
 import { type WhereFilterOp } from "firebase/firestore";
 
-type FilterCondition<Value> =
+export type FilterCondition<Value> =
   | { op: "in" | "not-in"; value: Value[] }
   | { op: Exclude<WhereFilterOp, "in" | "not-in">; value: Value }
   | Value;
 
-type FirestoreFilter<T> = {
+export type FirestoreFilter<T> = {
   [K in keyof T]?: FilterCondition<T[K]>;
 } & {
   id?: FilterCondition<string>;
