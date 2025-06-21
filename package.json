@@ -1,6 +1,6 @@
 {
   "name": "@peeranat-dan/firebase-helpers",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Firebase helper utilities",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
