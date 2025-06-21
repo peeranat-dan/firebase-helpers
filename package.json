@@ -1,0 +1,39 @@
+{
+  "name": "@peeranat-dan/firebase-helpers",
+  "version": "0.0.1",
+  "description": "Firebase helper utilities",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "pnpm run build",
+    "test": "vitest"
+  },
+  "keywords": [
+    "firebase",
+    "firestore",
+    "helpers"
+  ],
+  "author": "peeranat-dan",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/peeranat-dan/firebase-helpers.git"
+  },
+  "publishConfig": {
+    "@peeranat-dan:registry": "https://npm.pkg.github.com"
+  },
+  "packageManager": "pnpm@10.12.1",
+  "dependencies": {
+    "firebase": "^11.9.1"
+  },
+  "devDependencies": {
+    "@tsconfig/node24": "^24.0.1",
+    "@types/node": "^24.0.3",
+    "typescript": "^5.8.3",
+    "vitest": "^3.2.4"
+  }
+}
