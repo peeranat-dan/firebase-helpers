@@ -55,8 +55,6 @@ function processFilterConditions<T extends Record<string, unknown>>(
   constraints: QueryConstraint[]
 ): void {
   for (const [field, condition] of Object.entries(filter)) {
-    console.log(field, condition);
-
     const constraint =
       field === "id"
         ? createIdConstraint(condition as Condition)
